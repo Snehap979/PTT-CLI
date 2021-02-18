@@ -1,0 +1,39 @@
+ <MuiList>
+                    {this.state.events!=undefined && this.state.events.map((item)=>{
+                        return(
+                            <React.Fragment>
+                              
+<MuiListItem>
+{/* <Link style={{textDecoration: 'none',color: 'inherit'}}to={{pathname:routes.eventDetails}}> */}
+                            {/* <MuiListItemText primary={item.time} style={{fontWeight:'bold',border:'1px solid black',fontSize:'21px'}}/> */}
+                            <MuiListItemText
+                    primary={<MuiTypography style={{fontSize:20}}>
+                      {item.date} • {item.time}
+                    </MuiTypography>}
+                    secondary={<MuiTypography style={{fontSize:18,color:'grey'}}>
+                        {item.client}
+                    </MuiTypography>}
+                  />
+                     {/* </Link> */}
+               
+                  <ListItemSecondaryAction style={{paddingBottom:24}}>
+                    <MuiIconButton  aria-label="delete" style={{}}>
+                      <EditIcon style={{color:'#8bc34a'}}/>
+                    </MuiIconButton>
+                    <MuiIconButton  aria-label="delete"style={{paddingLeft:8}} onClick={(event)=>{this.handleDeleteEvent(event,item)}}>
+                      <HighlightOffIcon style={{color:'red'}} onClick={this.handleDeleteEvent}/>
+                    </MuiIconButton>
+                  </ListItemSecondaryAction>
+               
+                           </MuiListItem>
+                       
+                       <MuiDivider>
+
+                       </MuiDivider>
+                    
+                            </React.Fragment>
+                            
+                        )
+                    })}
+                    
+                </MuiList>

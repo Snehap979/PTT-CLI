@@ -1,0 +1,37 @@
+<MuiGrid container direction='column'>
+                            <MuiGrid container direction='row' style={{border:'1px solid black'}} xs={12}>
+                                <MuiGrid item xs={7}>
+                                <Box style={{}}  justifyContent="center"
+  alignItems="center" display='flex'>
+                            <MuiTypography style={{fontSize:18}}>
+                            {item.time}
+                            </MuiTypography>
+                            </Box>
+                                </MuiGrid>
+                          
+                            <MuiGrid item container direction='row' style={{border:'1px solid black'}} xs={5}>
+                            <MuiGrid item style={{}} >
+                                <MuiButton>
+                                <MuiIconButton >
+                    <EditIcon />
+                  </MuiIconButton>
+                                </MuiButton>
+                            
+                            </MuiGrid>
+                            <MuiGrid item style={{}} >
+                            <MuiButton>
+                                <MuiIconButton >
+                    <HighlightOffIcon />
+                  </MuiIconButton>
+                                </MuiButton>
+                            </MuiGrid>
+                            </MuiGrid>
+                       
+                            </MuiGrid>
+                           
+                            <MuiGrid item style={{paddingRight:16}} >
+                            <MuiTypography style={{fontSize:18}}>
+                            {item.clientName}
+                            </MuiTypography>
+                            </MuiGrid>
+                        </MuiGrid>
