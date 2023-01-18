@@ -19,6 +19,68 @@ routeToHome:false
             }
         
     }
+    componentDidMount(){
+        let a=123456789
+        let b=a.toString()
+        let c=b.split('');
+        
+        console.log("c",c[0])
+        let paperless={
+            isEasyPay:'N',
+            languageCode:''
+        }
+        let EventTypeClass=''
+            if (paperless.isEasyPay == 'Y') {
+                console.log("coming in if")
+                if ((paperless.totalDue < 0) && (paperless.languageCode == 'ENG' || paperless.languageCode == 'Default')) {
+                    EventTypeClass = "EasyPay_Credit_EN_SMS"
+                }
+                if ((paperless.totalDue < 0) && (paperless.languageCode == "SPAN")) {
+                    EventTypeClass = "EasyPay_Credit_SPN_SMS"
+                }
+                if ((paperless.totalDue > 0) && (paperless.pastAmountDueDate > 0) && (paperless.languageCode == "ENG" || paperless.languageCode == "Default")) {
+                    EventTypeClass = "EasyPay_Overeage_EN"
+                }
+    
+                if ((paperless.totalDue > 0) && (paperless.pastAmountDueDate > 0) && (paperless.languageCode == "SPAN")) {
+                    EventTypeClass = "EasyPay_Overeage_SPN"
+                }
+                if ((paperless.totalDue > 0) && (paperless.pastAmountDueDate > 0) && (paperless.languageCode == "SPAN")) {
+                    EventTypeClass = "EasyPay_Overeage_SPN"
+                }
+                if ((paperless.totalDue > 0) && (paperless.pastAmountDueDate < 0) && (paperless.languageCode == "ENG" || paperless.languageCode == "Default")) {
+                    EventTypeClass = "EasyPay_NoOvereage_EN"
+                }
+                if ((paperless.totalDue > 0) && (paperless.pastAmountDueDate < 0) && (paperless.languageCode == "SPAN")) {
+                    EventTypeClass = "EasyPay_NoOvereage_SPN"
+                }
+            }
+            if (paperless.isEasyPay == 'N') {
+                console.log("coming in else")
+                if ((paperless.totalDue < 0) && (paperless.languageCode == "ENG" || paperless.languageCode == "Default")) {
+                    EventTypeClass = "NonEasyPay_Credit_EN_SMS"
+                }
+                if ((paperless.totalDue < 0) && (paperless.languageCode == "SPAN")) {
+                    EventTypeClass = "NonEasyPay_Credit_SPN_SMS"
+                }
+    
+                if ((paperless.totalDue > 0) && (paperless.pastAmountDueDate > 0) && (paperless.languageCode == "ENG" || paperless.languageCode == "Default")) {
+                    EventTypeClass = "NonEasyPay_Overeage_EN"
+                }
+    
+                if ((paperless.totalDue > 0) && (paperless.pastAmountDueDate > 0) && (paperless.languageCode == "SPAN")) {
+                    EventTypeClass = "NonEasyPay_Overeage_SPN"
+                }
+                if ((paperless.totalDue > 0) && (paperless.pastAmountDueDate < 0) && (paperless.languageCode == "ENG" || paperless.languageCode == "Default")) {
+                    EventTypeClass = "NonEasyPay_NoOvereage_EN"
+                }
+                if ((paperless.totalDue > 0) && (paperless.pastAmountDueDate < 0) && (paperless.languageCode == "SPAN")) {
+                    EventTypeClass = "NonEasyPay_NoOvereage_SPN"
+                }
+            }
+            console.log("EventTypeClass",EventTypeClass)
+       
+    }
     handleEmailInput=(event)=>{
 this.setState({email:event.target.value})
     }
