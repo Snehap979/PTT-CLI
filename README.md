@@ -1,68 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🏋️‍♂️ Personal Training Tracking (PTT)
 
-## Available Scripts
+**Personal Training Tracking (PTT)** is a React.js-based appointment scheduling application designed specifically for fitness trainers. This app streamlines the process of managing clients, tracking appointments, and ensuring an efficient personal training experience. The app uses **Redux** for state management to provide a seamless user experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🖥️ Project Overview
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+PTT is designed to help fitness trainers:
+- Manage client appointments.
+- Keep track of training schedules.
+- Enhance client communication and satisfaction.
+- Provide an easy-to-use, intuitive interface for appointment management.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 📂 Features
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Appointment Management**: Schedule, view, and manage appointments with clients.
+- **Client Profiles**: View and update detailed profiles of clients, including fitness goals.
+- **Training History**: Track and review past sessions for improved planning.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Redux Store**: Centralized state management for consistent and efficient application performance.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🖼️ Screenshots
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Dashboard
+![Screenshot from 2025-01-01 13-41-46](https://github.com/user-attachments/assets/f68ac196-3bd5-4d32-bd8f-03f7131947a6)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Appointment Scheduling
+![Screenshot from 2024-12-31 15-38-28](https://github.com/user-attachments/assets/cb4576ad-a00a-48fd-9d4e-0fa6de0521ad)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Client Profiles
+![Screenshot from 2024-12-31 15-38-36](https://github.com/user-attachments/assets/e2c377d4-62fe-4973-b44d-7c5d45f1ef9c)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Tech Stack
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Frontend**: React.js
+- **State Management**: Redux
+- **Styling**: CSS/Material-UI (or any other library used)
+- **Build Tool**: Vite/Webpack (or any other tool used)
+- **Package Manager**: npm/yarn
+- **Backend**: (Mention here if you are using any backend technologies or mock APIs)
+- **Database**: (Mention here if applicable)
 
-### Code Splitting
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## 🚀 Getting Started
 
-### Analyzing the Bundle Size
+Follow the instructions below to set up and run the project on your local machine.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### Prerequisites
 
-### Making a Progressive Web App
+Ensure you have the following installed on your system:
+- Node.js (v16 or later)
+- npm or yarn
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Installation
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/PTT.git
